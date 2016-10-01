@@ -1,9 +1,153 @@
+@charset "UTF-8";
+::-webkit-input-placeholder {
+  color: #cacdce;
+  padding-top: 5px; }
+
+::-moz-placeholder {
+  color: #cacdce; }
+
+:-moz-placeholder {
+  color: #cacdce; }
+
+:-ms-input-placeholder {
+  color: #cacdce; }
+
+@font-face {
+  font-family: GloberBold;
+  /* Имя шрифта */
+  src: url(../fonts/GloberBold.otf);
+  /* Путь к файлу со шрифтом */ }
+@font-face {
+  font-family: GloberRegular;
+  /* Имя шрифта */
+  src: url(../fonts/GloberRegular.otf);
+  /* Путь к файлу со шрифтом */ }
+@font-face {
+  font-family: GloberThin;
+  /* Имя шрифта */
+  src: url(../fonts/GloberThin.otf);
+  /* Путь к файлу со шрифтом */ }
 * {
   margin: 0;
   padding: 0; }
 
-.main {
-  font-size: 50px;
-  text-align: center; }
+.thin-text {
+  font-family: GloberThin; }
+
+.regular-text {
+  font-family: GloberRegular; }
+
+.bold-text {
+  font-family: GloberBold; }
+
+body {
+  background: #1bbc9b !important; }
+  body .flex-container {
+    height: 100vh;
+    display: flex;
+    align-items: center; }
+    body .flex-container .main-content {
+      width: 100vw; }
+      body .flex-container .main-content .beetroot-icon {
+        color: #ffffff;
+        margin-bottom: 28px;
+        padding-left: 15px; }
+        body .flex-container .main-content .beetroot-icon .envelope {
+          position: relative;
+          margin: 30px auto 0;
+          width: 72px;
+          height: 46px;
+          background: #bd9047;
+          border-radius: 0 0 2px 2px;
+          box-shadow: 0 0 1px #c94548 rgba(0, 0, 0, 0.15); }
+          body .flex-container .main-content .beetroot-icon .envelope:before, body .flex-container .main-content .beetroot-icon .envelope:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 0 solid transparent;
+            border-width: 23px 36px; }
+          body .flex-container .main-content .beetroot-icon .envelope:before {
+            border-bottom-color: #bd9047;
+            top: -100%;
+            left: 0px; }
+          body .flex-container .main-content .beetroot-icon .envelope:after {
+            border-right-color: #e67d23;
+            border-left-color: #ecc50d;
+            border-bottom-color: #f09c13;
+            border-radius: 0 0 2px 2px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
+          body .flex-container .main-content .beetroot-icon .envelope .paper {
+            background: #ffffff;
+            width: 68px;
+            height: 66px;
+            margin: 0 auto;
+            position: absolute;
+            left: 2px;
+            top: -30px; }
+            body .flex-container .main-content .beetroot-icon .envelope .paper .paper-top {
+              right: 0;
+              position: absolute;
+              border-right: 12px solid #1bbc9b;
+              border-bottom: 12px solid #ed4c35; }
+        body .flex-container .main-content .beetroot-icon p {
+          font-size: 12.5px;
+          text-align: left;
+          width: 70px;
+          margin: 12px auto 0; }
+      body .flex-container .main-content .beetroot-form {
+        background: #eeeff1;
+        padding: 17px !important;
+        border-radius: 5px; }
+        body .flex-container .main-content .beetroot-form .form-right-nose {
+          left: -9px;
+          top: 25px;
+          position: absolute;
+          border-top: 9px solid transparent;
+          border-bottom: 9px solid transparent;
+          border-right: 9px solid #eeeff1; }
+        body .flex-container .main-content .beetroot-form .form-top-nose {
+          left: 49%;
+          top: -9px;
+          position: absolute;
+          border-left: 9px solid transparent;
+          border-right: 9px solid transparent;
+          border-bottom: 9px solid #eeeff1; }
+        body .flex-container .main-content .beetroot-form #form-container input, body .flex-container .main-content .beetroot-form #form-container .forgot-password {
+          width: 100%;
+          margin-top: 12px;
+          color: #cacdce; }
+        body .flex-container .main-content .beetroot-form #form-container input:nth-of-type(1) {
+          margin-top: 0; }
+        body .flex-container .main-content .beetroot-form #form-container input {
+          border: none;
+          border-radius: 5px;
+          height: 36px;
+          padding-left: 8px;
+          padding-top: 5px;
+          position: relative; }
+          body .flex-container .main-content .beetroot-form #form-container input.btn {
+            background: #1bbc9b;
+            color: #ffffff;
+            padding-top: 0;
+            line-height: 42px; }
+          body .flex-container .main-content .beetroot-form #form-container input:focus {
+            outline: none; }
+        body .flex-container .main-content .beetroot-form #form-container .fa:before {
+          color: #cacdce;
+          position: absolute; }
+        body .flex-container .main-content .beetroot-form #form-container .fa-user:before {
+          top: 28px;
+          right: 25px; }
+        body .flex-container .main-content .beetroot-form #form-container .fa-lock:before {
+          top: 76px;
+          right: 27px; }
+        body .flex-container .main-content .beetroot-form #form-container .forgot-password {
+          display: block;
+          text-align: center;
+          font-size: 11px;
+          padding-bottom: 0;
+          cursor: pointer;
+          text-decoration: underline; }
 
 /*# sourceMappingURL=styles.css.map */
