@@ -1,16 +1,4 @@
 @charset "UTF-8";
-::-webkit-input-placeholder {
-  color: #cacdce; }
-
-::-moz-placeholder {
-  color: #cacdce; }
-
-:-moz-placeholder {
-  color: #cacdce; }
-
-:-ms-input-placeholder {
-  color: #cacdce; }
-
 @font-face {
   font-family: GloberBold;
   /* Имя шрифта */
@@ -31,10 +19,6 @@
   /* Имя шрифта */
   src: url(../fonts/GloberThin.otf);
   /* Путь к файлу со шрифтом */ }
-* {
-  margin: 0;
-  padding: 0; }
-
 .thin-text {
   font-family: GloberThin; }
 
@@ -46,6 +30,22 @@
 
 .bold-text {
   font-family: GloberBold; }
+
+::-webkit-input-placeholder {
+  color: #cacdce; }
+
+::-moz-placeholder {
+  color: #cacdce; }
+
+:-moz-placeholder {
+  color: #cacdce; }
+
+:-ms-input-placeholder {
+  color: #cacdce; }
+
+* {
+  margin: 0;
+  padding: 0; }
 
 body {
   background: #1bbc9b !important; }

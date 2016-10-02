@@ -1,3 +1,5 @@
+// Colors
+
 $bgcolor: #1bbc9b;
 $formbgcolor: #eeeff1;
 $white: #ffffff;
@@ -9,4 +11,51 @@ $iconorangebg: #bd9047;
 $iconred1: #ed4c35;
 $textcolor: #cacdce;
 $shadowcolor: #c94548;
-$vvvv: #c06002;
+$envshadow: #c06002;
+
+
+// Fonts
+
+@font-face {
+    font-family: GloberBold; /* Имя шрифта */
+    src: url(../fonts/GloberBold.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: GloberRegular; /* Имя шрифта */
+    src: url(../fonts/GloberRegular.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: GloberLight; /* Имя шрифта */
+    src: url(../fonts/GloberLight.otf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: GloberThin; /* Имя шрифта */
+    src: url(../fonts/GloberThin.otf); /* Путь к файлу со шрифтом */
+}
+
+.thin-text {
+    font-family: GloberThin;
+}
+
+.light-text {
+    font-family: GloberLight;
+}
+
+.regular-text {
+    font-family: GloberRegular;
+}
+
+.bold-text {
+    font-family: GloberBold;
+}
+
+
+// Placeholder
+
+::-webkit-input-placeholder {color: $textcolor;}
+::-moz-placeholder          {color: $textcolor;}
+:-moz-placeholder           {color: $textcolor;}
+:-ms-input-placeholder      {color: $textcolor;}

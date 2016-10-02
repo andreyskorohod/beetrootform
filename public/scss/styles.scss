@@ -1,49 +1,8 @@
 @import '_variables';
 
-::-webkit-input-placeholder {color: $textcolor;}
-::-moz-placeholder          {color: $textcolor;}
-:-moz-placeholder           {color: $textcolor;}
-:-ms-input-placeholder      {color: $textcolor;}
-
-@font-face {
-    font-family: GloberBold; /* Имя шрифта */
-    src: url(../fonts/GloberBold.otf); /* Путь к файлу со шрифтом */
-}
-
-@font-face {
-    font-family: GloberRegular; /* Имя шрифта */
-    src: url(../fonts/GloberRegular.otf); /* Путь к файлу со шрифтом */
-}
-
-@font-face {
-    font-family: GloberLight; /* Имя шрифта */
-    src: url(../fonts/GloberLight.otf); /* Путь к файлу со шрифтом */
-}
-
-@font-face {
-    font-family: GloberThin; /* Имя шрифта */
-    src: url(../fonts/GloberThin.otf); /* Путь к файлу со шрифтом */
-}
-
 * {
     margin: 0;
     padding: 0;
-}
-
-.thin-text {
-    font-family: GloberThin;
-}
-
-.light-text {
-    font-family: GloberLight;
-}
-
-.regular-text {
-    font-family: GloberRegular;
-}
-
-.bold-text {
-    font-family: GloberBold;
 }
 
 body {
@@ -73,9 +32,9 @@ body {
                     }
 
                     &:after {
-                        border-right-color: $vvvv;
-                        border-left-color: $vvvv;
-                        border-bottom-color: $vvvv;
+                        border-right-color: $envshadow;
+                        border-left-color: $envshadow;
+                        border-bottom-color: $envshadow;
                         border-radius: 0 0 2px 2px;
                         box-shadow: 0 1px 1px rgba(0,0,0,0.25);
                     }
