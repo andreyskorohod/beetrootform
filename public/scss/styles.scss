@@ -60,7 +60,6 @@ body {
                     position: relative;
                     background: $iconorangebg;
                     border-radius: 0 0 2px 2px;
-                    box-shadow: 0 0 1px $shadowcolor rgba(0, 0, 0, 0.15);
 
                     &:before,
                     &:after {
@@ -74,11 +73,36 @@ body {
                     }
 
                     &:after {
-                        border-right-color: $iconorange3;
-                        border-left-color: $iconorange1;
-                        border-bottom-color: $iconorange2;
+                        border-right-color: $vvvv;
+                        border-left-color: $vvvv;
+                        border-bottom-color: $vvvv;
                         border-radius: 0 0 2px 2px;
                         box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+                    }
+
+                    .envpart-left {
+                        width: 0;
+                        height: 0;
+                        position: absolute;
+                        z-index: 15;
+                        right: 0px;
+                    }
+
+                    .envpart-right {
+                        width: 0;
+                        height: 0;
+                        position: absolute;
+                        z-index: 15;
+                        left: 0px;
+                    }
+
+                    .envpart-up {
+                        width: 0;
+                        height: 0;
+                        position: absolute;
+                        z-index: 15;
+                        bottom: 0px;
+                        border-radius: 3px;
                     }
 
                     .paper {
@@ -87,7 +111,8 @@ body {
                         position: absolute;
 
                         .paper-top {
-                            right: 0;
+                            top: -0.5px;
+                            right: -0.5px;
                             position: absolute;
                         }
                     }
@@ -197,7 +222,26 @@ body {
                     .paper-top {
                         border-right: 12px solid $bgcolor;
                         border-bottom: 12px solid $iconorangetop;
+                        box-shadow: -4px 4px 10px -2px rgba(0, 0, 0, 0.25);
                     }
+                }
+
+                .envpart-left {
+                    border-top: 22.9px solid transparent;
+                    border-bottom: 22.9px solid transparent;
+                    border-right: 36px solid $iconorange3;
+                }
+
+                .envpart-right {
+                    border-top: 22.9px solid transparent;
+                    border-bottom: 22.9px solid transparent;
+                    border-left: 36px solid $iconorange1;
+                }
+
+                .envpart-up {
+                    border-left: 36px solid transparent;
+                    border-right: 36px solid transparent;
+                    border-bottom: 24px solid $iconorange2;
                 }
             }
 
@@ -298,7 +342,7 @@ body {
 }
 
 @media screen and (max-width : 667px) {
-	.flex-container {
+    .flex-container {
 		height: 100vh;
         display: flex;
         align-items: center;
@@ -330,7 +374,26 @@ body {
                     .paper-top {
                         border-right: 12px solid $bgcolor;
                         border-bottom: 12px solid $iconorangetop;
+                        box-shadow: -4px 4px 10px -2px rgba(0, 0, 0, 0.25);
                     }
+                }
+
+                .envpart-left {
+                    border-top: 22.9px solid transparent;
+                    border-bottom: 22.9px solid transparent;
+                    border-right: 36px solid $iconorange3;
+                }
+
+                .envpart-right {
+                    border-top: 22.9px solid transparent;
+                    border-bottom: 22.9px solid transparent;
+                    border-left: 36px solid $iconorange1;
+                }
+
+                .envpart-up {
+                    border-left: 36px solid transparent;
+                    border-right: 36px solid transparent;
+                    border-bottom: 24px solid $iconorange2;
                 }
             }
 
@@ -426,7 +489,6 @@ body {
                 }
             }
         }
-
 	}
 }
 
@@ -465,7 +527,26 @@ body {
                       .paper-top {
                           border-right: 42px solid $bgcolor;
                           border-bottom: 42px solid $iconorangetop;
+                          box-shadow: -10px 10px 25px -2px rgba(0, 0, 0, 0.25);
                       }
+                  }
+
+                  .envpart-left {
+                        border-top: 82.9px solid transparent;
+                        border-bottom: 79.9px solid transparent;
+                        border-right: 128px solid $iconorange3;
+                  }
+
+                  .envpart-right {
+                      border-top: 82.9px solid transparent;
+                      border-bottom: 79.9px solid transparent;
+                      border-left: 128px solid $iconorange1;
+                  }
+
+                  .envpart-up {
+                      border-left: 128px solid transparent;
+                      border-right: 128px solid transparent;
+                      border-bottom: 82px solid $iconorange2;
                   }
               }
 

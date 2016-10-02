@@ -56,24 +56,43 @@ body {
       body .flex-container .main-content .beetroot-icon .envelope {
         position: relative;
         background: #bd9047;
-        border-radius: 0 0 2px 2px;
-        box-shadow: 0 0 1px #c94548 rgba(0, 0, 0, 0.15); }
+        border-radius: 0 0 2px 2px; }
         body .flex-container .main-content .beetroot-icon .envelope:before {
           border-bottom-color: #bd9047;
           top: -100%;
           left: 0px; }
         body .flex-container .main-content .beetroot-icon .envelope:after {
-          border-right-color: #e67d23;
-          border-left-color: #ecc50d;
-          border-bottom-color: #f09c13;
+          border-right-color: #c06002;
+          border-left-color: #c06002;
+          border-bottom-color: #c06002;
           border-radius: 0 0 2px 2px;
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25); }
+        body .flex-container .main-content .beetroot-icon .envelope .envpart-left {
+          width: 0;
+          height: 0;
+          position: absolute;
+          z-index: 15;
+          right: 0px; }
+        body .flex-container .main-content .beetroot-icon .envelope .envpart-right {
+          width: 0;
+          height: 0;
+          position: absolute;
+          z-index: 15;
+          left: 0px; }
+        body .flex-container .main-content .beetroot-icon .envelope .envpart-up {
+          width: 0;
+          height: 0;
+          position: absolute;
+          z-index: 15;
+          bottom: 0px;
+          border-radius: 3px; }
         body .flex-container .main-content .beetroot-icon .envelope .paper {
           background: #ffffff;
           margin: 0 auto;
           position: absolute; }
           body .flex-container .main-content .beetroot-icon .envelope .paper .paper-top {
-            right: 0;
+            top: -0.5px;
+            right: -0.5px;
             position: absolute; }
       body .flex-container .main-content .beetroot-icon p {
         text-align: left; }
@@ -142,7 +161,20 @@ body {
           top: -30px; }
           .flex-container .beetroot-icon .envelope .paper .paper-top {
             border-right: 12px solid #1bbc9b;
-            border-bottom: 12px solid #ed4c35; }
+            border-bottom: 12px solid #ed4c35;
+            box-shadow: -4px 4px 10px -2px rgba(0, 0, 0, 0.25); }
+        .flex-container .beetroot-icon .envelope .envpart-left {
+          border-top: 22.9px solid transparent;
+          border-bottom: 22.9px solid transparent;
+          border-right: 36px solid #e67d23; }
+        .flex-container .beetroot-icon .envelope .envpart-right {
+          border-top: 22.9px solid transparent;
+          border-bottom: 22.9px solid transparent;
+          border-left: 36px solid #ecc50d; }
+        .flex-container .beetroot-icon .envelope .envpart-up {
+          border-left: 36px solid transparent;
+          border-right: 36px solid transparent;
+          border-bottom: 24px solid #f09c13; }
       .flex-container .beetroot-icon p {
         font-size: 12.5px;
         text-align: left;
@@ -230,7 +262,20 @@ body {
           top: -30px; }
           .flex-container .beetroot-icon .envelope .paper .paper-top {
             border-right: 12px solid #1bbc9b;
-            border-bottom: 12px solid #ed4c35; }
+            border-bottom: 12px solid #ed4c35;
+            box-shadow: -4px 4px 10px -2px rgba(0, 0, 0, 0.25); }
+        .flex-container .beetroot-icon .envelope .envpart-left {
+          border-top: 22.9px solid transparent;
+          border-bottom: 22.9px solid transparent;
+          border-right: 36px solid #e67d23; }
+        .flex-container .beetroot-icon .envelope .envpart-right {
+          border-top: 22.9px solid transparent;
+          border-bottom: 22.9px solid transparent;
+          border-left: 36px solid #ecc50d; }
+        .flex-container .beetroot-icon .envelope .envpart-up {
+          border-left: 36px solid transparent;
+          border-right: 36px solid transparent;
+          border-bottom: 24px solid #f09c13; }
       .flex-container .beetroot-icon p {
         font-size: 12.5px;
         text-align: left;
@@ -315,7 +360,20 @@ body {
           top: -106px; }
           .flex-container .beetroot-icon .envelope .paper .paper-top {
             border-right: 42px solid #1bbc9b;
-            border-bottom: 42px solid #ed4c35; }
+            border-bottom: 42px solid #ed4c35;
+            box-shadow: -10px 10px 25px -2px rgba(0, 0, 0, 0.25); }
+        .flex-container .beetroot-icon .envelope .envpart-left {
+          border-top: 82.9px solid transparent;
+          border-bottom: 79.9px solid transparent;
+          border-right: 128px solid #e67d23; }
+        .flex-container .beetroot-icon .envelope .envpart-right {
+          border-top: 82.9px solid transparent;
+          border-bottom: 79.9px solid transparent;
+          border-left: 128px solid #ecc50d; }
+        .flex-container .beetroot-icon .envelope .envpart-up {
+          border-left: 128px solid transparent;
+          border-right: 128px solid transparent;
+          border-bottom: 82px solid #f09c13; }
       .flex-container .beetroot-icon p {
         font-size: 40px;
         text-align: left;
